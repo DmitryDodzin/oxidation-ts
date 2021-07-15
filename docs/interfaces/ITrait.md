@@ -10,7 +10,7 @@
 
 ## Hierarchy
 
-- [`IType`](IType.md)<`Definition`\>
+- `IBaseType`<`Definition`\>
 
   ↳ **`ITrait`**
 
@@ -18,14 +18,25 @@
 
 ### Properties
 
+- [\_reflect](ITrait.md#_reflect)
 - [key](ITrait.md#key)
 
 ## Properties
 
-### key
+### \_reflect
 
-• **key**: `Symbol`
+• `Readonly` **\_reflect**: `Definition`
 
 #### Inherited from
 
-[IType](IType.md).[key](IType.md#key)
+IBaseType.\_reflect
+
+___
+
+### key
+
+• `Readonly` **key**: `Symbol`
+
+#### Inherited from
+
+IBaseType.key
