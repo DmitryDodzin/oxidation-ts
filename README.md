@@ -3,8 +3,6 @@
 [![Test Status](https://github.com/DmitryDodzin/oxidation-ts/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/DmitryDodzin/oxidation-ts/actions/workflows/test.yml?query=branch%3Amain)
 [![Coverage Status](https://coveralls.io/repos/github/DmitryDodzin/oxidation-ts/badge.svg?branch=main)](https://coveralls.io/github/DmitryDodzin/oxidation-ts?branch=main)
 
-[![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/DmitryDodzin/oxidation-ts)](https://app.snyk.io/org/DmitryDodzin/project/oxidation-ts)
-
 [![npm](https://img.shields.io/npm/v/oxidation-ts)](https://www.npmjs.com/package/oxidation-ts)
 [![NPM](https://img.shields.io/npm/l/oxidation-ts)](https://www.npmjs.com/package/oxidation-ts)
 [![npm](https://img.shields.io/npm/dm/oxidation-ts)](https://www.npmjs.com/package/oxidation-ts)
