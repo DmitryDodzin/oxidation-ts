@@ -1,6 +1,6 @@
 {
   "name": "oxidation-ts",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "oxidation-ts",
   "main": "./index.js",
   "types": "./index.d.ts",
