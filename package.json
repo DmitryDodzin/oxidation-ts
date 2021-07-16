@@ -19,7 +19,7 @@
     "coverage": "jest --coverage",
     "deduplicate": "yarn-deduplicate -s fewer",
     "docs": "yarn typedoc --disableSources index.ts",
-    "lint": "eslint . --cache",
+    "lint": "eslint --ext .ts . --cache",
     "prepare": "husky install",
     "prerelease": "yarn build",
     "release": "changeset publish",

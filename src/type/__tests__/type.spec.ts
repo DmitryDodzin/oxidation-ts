@@ -16,7 +16,6 @@ describe('types', () => {
     });
 
     expect(Bar.foo).toBeDefined();
-    /* eslint-disable-next-line @typescript-eslint/no-confusing-void-expression */
     expect(Bar.foo()).toStrictEqual('bar');
   });
 });
