@@ -21,6 +21,10 @@
 - [\_reflect](ITrait.md#_reflect)
 - [key](ITrait.md#key)
 
+### Methods
+
+- [implFor](ITrait.md#implfor)
+
 ## Properties
 
 ### \_reflect
@@ -40,3 +44,28 @@ ___
 #### Inherited from
 
 IBaseType.key
+
+## Methods
+
+### implFor
+
+▸ **implFor**<`TraitDefinition`, `Static`, `Type`\>(`type`, `definition`): `ImplementedType`<`TraitDefinition`\> & `Type`
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `TraitDefinition` | `TraitDefinition` |
+| `Static` | `Static` |
+| `Type` | extends [`IType`](IType.md)<`Static`, `Type`\> |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `type` | `Type` |
+| `definition` | `ImplementedType`<`TraitDefinition`\> |
+
+#### Returns
+
+`ImplementedType`<`TraitDefinition`\> & `Type`

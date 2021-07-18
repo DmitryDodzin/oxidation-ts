@@ -53,9 +53,9 @@ IBaseType.key
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `Definition` | extends `Record`<`string`, [`IFunction`](IFunction.md)<`fn`\>\> |
+| Name |
+| :------ |
+| `Definition` |
 
 #### Parameters
 

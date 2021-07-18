@@ -1,4 +1,3 @@
-import type { IFunction } from '../function';
 import type { IType, ITypeApi, ImplementedType } from './interfaces';
 
 const create = <Static>(): IType<Static> => ({
@@ -6,9 +5,7 @@ const create = <Static>(): IType<Static> => ({
   get _reflect(): Static {
     throw new Error('Should not be called');
   },
-  impl<Definition extends Record<string, IFunction>>(
-    implmintation: ImplementedType<Definition>,
-  ): ImplementedType<Definition> & IType<Static> {
+  impl<Definition>(implmintation: ImplementedType<Definition>): ImplementedType<Definition> & IType<Static> {
     return Object.assign(this, implmintation);
   },
 });
