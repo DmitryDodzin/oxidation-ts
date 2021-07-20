@@ -1,16 +1,31 @@
-import { Trait, Type } from '../../index';
+import { String, Record, Static } from 'runtypes';
+
+import { Trait } from '../../index';
 
 describe('traits', () => {
-  it('implements', () => {
-    const Foo = Trait.create();
+  it('create', () => {
+    const Foo = Trait.create<{
+      print: () => typeof String,
+    }>();
 
-    const Bar = Foo.implFor(Type.create<string>(), {
-      foo(): string {
-        return 'bar';
-      },
+    expect(Foo).toBeDefined();
+  });
+
+
+  it('impl', () => {
+    const Foo = Trait.create<{
+      print: (self: any) => String,
+    }>();
+
+    const MyType = Foo.impl(Record({
+      foobar: String
+    }), {
+      print(self: Static<typeof MyType>) {
+        return self.foobar;
+      }
     });
 
-    expect(Bar.foo).toBeDefined();
-    expect(Bar.foo()).toStrictEqual('bar');
+    expect(MyType.print).toBeDefined();
+    expect(MyType.print({ foobar: 'baz' })).toStrictEqual('baz');
   });
 });
