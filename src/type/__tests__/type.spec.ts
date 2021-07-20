@@ -1,4 +1,4 @@
-import { Type } from '../type';
+import { Type } from '../../index';
 
 describe('types', () => {
   it('key', () => {
@@ -6,6 +6,12 @@ describe('types', () => {
     const Baz = Type.create<number>();
 
     expect(Bar.key).not.toStrictEqual(Baz.key);
+  });
+
+  it('reflect', () => {
+    const Bar = Type.create<string>();
+
+    expect(() => Bar._reflect).toThrow();
   });
 
   it('implements', () => {

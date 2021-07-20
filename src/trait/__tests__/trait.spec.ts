@@ -1,5 +1,4 @@
-import { Type } from '../../type';
-import { Trait } from '../trait';
+import { Trait, Type } from '../../index';
 
 describe('traits', () => {
   it('implements', () => {
