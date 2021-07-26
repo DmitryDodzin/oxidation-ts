@@ -1,8 +1,7 @@
 import type { Runtype, Static } from 'runtypes';
 
-/* eslint-disable-next-line @typescript-eslint/no-unused-vars */
 export interface ITrait<Definition> {
-  impl<Type extends Runtype>(type: Type, definition: StaticDefinition<Definition>): Type & StaticDefinition<Definition>;
+  impl<Type extends Runtype>(type: Type, definition: StaticDefinition<Definition>): StaticDefinition<Definition> & Type;
 }
 
 export interface ITraitApi {
