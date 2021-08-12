@@ -8,6 +8,10 @@ export interface ITraitApi {
   create<Definition>(): ITrait<Definition>;
 }
 
+export type TraitDefinition<Trait> = Trait extends ITrait<infer Definition>
+  ? StaticDefinition<Definition>
+  : StaticDefinition<Trait>;
+
 export type StaticDefinition<Definition> = Definition extends Runtype
   ? Static<Definition>
   : Definition extends () => infer Result
@@ -79,6 +83,7 @@ export type StaticDefinition<Definition> = Definition extends Runtype
     ) => StaticDefinition<Result>
   : Definition extends (...args: infer Args) => infer Result
   ? (...args: StaticDefinition<Args[keyof Args]>[]) => StaticDefinition<Result>
-  : Definition extends Record<string, any>
+  : /* eslint-disable-next-line @typescript-eslint/no-explicit-any */
+  Definition extends Record<string, any>
   ? { [Key in keyof Definition]: StaticDefinition<Definition[Key]> }
   : unknown;
