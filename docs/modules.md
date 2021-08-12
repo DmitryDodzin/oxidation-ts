@@ -100,3 +100,49 @@
 #### Returns
 
 [`Derivable`](modules.md#derivable)<`TraitDefinition`<`Trait1`\> & `TraitDefinition`<`Trait2`\>\>
+
+▸ `Const` **derive**<`Trait1`, `Trait2`, `Trait3`\>(`trait1`, `trait2`, `trait3`): [`Derivable`](modules.md#derivable)<`TraitDefinition`<`Trait1`\> & `TraitDefinition`<`Trait2`\> & `TraitDefinition`<`Trait3`\>\>
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `Trait1` |
+| `Trait2` |
+| `Trait3` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `trait1` | `Trait1` |
+| `trait2` | `Trait2` |
+| `trait3` | `Trait3` |
+
+#### Returns
+
+[`Derivable`](modules.md#derivable)<`TraitDefinition`<`Trait1`\> & `TraitDefinition`<`Trait2`\> & `TraitDefinition`<`Trait3`\>\>
+
+▸ `Const` **derive**<`Trait1`, `Trait2`, `Trait3`, `Trait4`\>(`trait1`, `trait2`, `trait3`, `trait4`): [`Derivable`](modules.md#derivable)<`TraitDefinition`<`Trait1`\> & `TraitDefinition`<`Trait2`\> & `TraitDefinition`<`Trait3`\> & `TraitDefinition`<`Trait4`\>\>
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `Trait1` |
+| `Trait2` |
+| `Trait3` |
+| `Trait4` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `trait1` | `Trait1` |
+| `trait2` | `Trait2` |
+| `trait3` | `Trait3` |
+| `trait4` | `Trait4` |
+
+#### Returns
+
+[`Derivable`](modules.md#derivable)<`TraitDefinition`<`Trait1`\> & `TraitDefinition`<`Trait2`\> & `TraitDefinition`<`Trait3`\> & `TraitDefinition`<`Trait4`\>\>
