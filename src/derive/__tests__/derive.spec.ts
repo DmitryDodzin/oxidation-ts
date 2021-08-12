@@ -1,7 +1,7 @@
 import { String } from 'runtypes';
 import { Trait, derive } from '../..';
 
-describe('derive', () => {
+describe.skip('derive', () => {
   it('simple', () => {
     const Foo = Trait.create<{
       print(self: typeof String): typeof String;

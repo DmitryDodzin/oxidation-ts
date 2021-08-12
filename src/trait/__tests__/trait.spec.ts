@@ -14,7 +14,7 @@ describe('traits', () => {
 
   it('impl', () => {
     const Foo = Trait.create<{
-      print(self: any): string;
+      print(self: unknown): string;
     }>();
 
     const MyType = Foo.impl(
