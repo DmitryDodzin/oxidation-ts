@@ -1,1 +1,0 @@
-export { IFunction } from './interfaces';

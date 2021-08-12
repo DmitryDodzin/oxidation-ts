@@ -1,14 +1,13 @@
-import type { IType, ImplementedType } from '../type';
-import { Type } from '../type';
-import type { ITrait, ITraitApi } from './interfaces';
-
-const implFor = <Definition, Static, ImplType extends IType<Static>>(
-  type: ImplType,
-  definition: ImplementedType<Definition>,
-): ImplementedType<Definition> & ImplType => type.impl(definition);
-
-const create = <Definition>(): ITrait<Definition> => Object.assign(Type.create<Definition>(), { implFor });
+import type { Runtype } from 'runtypes';
+import type { ITrait, ITraitApi, StaticDefinition } from './interfaces';
 
 export const Trait: ITraitApi = {
-  create,
+  create: <Definition>(): ITrait<Definition> => ({
+    impl<Type extends Runtype>(
+      type: Type,
+      definition: StaticDefinition<Definition>,
+    ): StaticDefinition<Definition> & Type {
+      return Object.assign(type, definition);
+    },
+  }),
 };
