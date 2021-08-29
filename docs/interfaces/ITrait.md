@@ -8,64 +8,31 @@
 | :------ |
 | `Definition` |
 
-## Hierarchy
-
-- `IBaseType`<`Definition`\>
-
-  ↳ **`ITrait`**
-
 ## Table of contents
-
-### Properties
-
-- [\_reflect](ITrait.md#_reflect)
-- [key](ITrait.md#key)
 
 ### Methods
 
-- [implFor](ITrait.md#implfor)
-
-## Properties
-
-### \_reflect
-
-• `Readonly` **\_reflect**: `Definition`
-
-#### Inherited from
-
-IBaseType.\_reflect
-
-___
-
-### key
-
-• `Readonly` **key**: `Symbol`
-
-#### Inherited from
-
-IBaseType.key
+- [impl](ITrait.md#impl)
 
 ## Methods
 
-### implFor
+### impl
 
-▸ **implFor**<`TraitDefinition`, `Static`, `Type`\>(`type`, `definition`): `ImplementedType`<`TraitDefinition`\> & `Type`
+▸ **impl**<`Type`\>(`type`, `definition`): `StaticDefinition`<`Definition`\> & `Type`
 
 #### Type parameters
 
 | Name | Type |
 | :------ | :------ |
-| `TraitDefinition` | `TraitDefinition` |
-| `Static` | `Static` |
-| `Type` | extends [`IType`](IType.md)<`Static`, `Type`\> |
+| `Type` | extends `Runtype`<`unknown`, `Type`\> |
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `type` | `Type` |
-| `definition` | `ImplementedType`<`TraitDefinition`\> |
+| `definition` | `StaticDefinition`<`Definition`\> |
 
 #### Returns
 
-`ImplementedType`<`TraitDefinition`\> & `Type`
+`StaticDefinition`<`Definition`\> & `Type`
